@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Light aqua blue background for the page */
+            margin: 0;
+            padding: 0;
+            padding-top: 60px; /* Add padding to ensure the header is visible */
+            background-image: url('https://www.crafttrip.in/image/cache/catalog/landscape/landscape-painting-watercolor-nature-wall-art-800x534w.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: rgba(118, 231, 177, 0.9); /* Aqua blue background for the header */
+            color: #ffffff; /* White text color for the header */
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 8px;
+            margin: 0;
+        }
+
+        p {
+            color: #00796b; /* Green color for the text */
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 100px auto 0; /* Adjust top margin to account for fixed navbar */
+            padding: 20px;
+            background-color: #a7ffeb; /* Light green background for the paragraph */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            background-color: #0f5663; /* Dark blue */
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-item {
+            margin: 0 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #F2E9E4;
+            padding: 10px 25px;
+            display: block;
+            border-radius: 5px;
+            transition: color 0.3s, background-color 0.3s, transform 0.3s;
+            font-size: large;
+        }
+
+        .nav-link:hover {
+            color: #0b0b0b;
+            background-color: #F2E9E4;
+            transform: scale(1.1);
+        }
+        
+        footer {
+            background-color: #4A4E69;
+            color: #F2E9E4;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .section {
+            height: 100vh; /* Full viewport height to ensure scrolling */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>About</header>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="file:///E:/Html%20Websites/Intern/landing_page.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="file:///E:/Html%20Websites/Intern/lp1.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="file:///E:/Html%20Websites/Intern/lp2.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Additional content to enable scrolling -->
+    <div class="section">
+        <p>I am an artist with a deep love for visual storytelling. My journey began at a young age, fueled by a fascination with colors, shapes, and the boundless possibilities of imagination. Over the years, I have honed my skills and developed a unique style that blends traditional techniques with contemporary influences. My work is inspired by the world around me, from the serene beauty of nature to the dynamic energy of urban landscapes.</p>
+    </div>
+    
+    <footer>
+        &copy; 2024 Artistic Portfolio. All rights reserved.
+    </footer>
+    <script>
+        // JavaScript for interactivity
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.querySelector('.navbar');
+
+            // Change navbar style on scroll
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.style.backgroundColor = '#870af5'; // Black color
+                } else {
+                    navbar.style.backgroundColor = '#e10af5'; // Dark blue color
+                }
+            });
+        });
+    </script>
+</body>
+</html>
